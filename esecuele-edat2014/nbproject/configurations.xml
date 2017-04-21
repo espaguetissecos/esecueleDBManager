@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>operation/condition/condition.h</itemPath>
+      <itemPath>database/database.h</itemPath>
+      <itemPath>database/index.h</itemPath>
+      <itemPath>operation/operation.h</itemPath>
+      <itemPath>parser/parser.h</itemPath>
+      <itemPath>operation/projection/projection.h</itemPath>
+      <itemPath>database/record.h</itemPath>
+      <itemPath>parser/stack/stack.h</itemPath>
+      <itemPath>database/table.h</itemPath>
+      <itemPath>type/type.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="database" displayName="database" projectFiles="true">
+        <itemPath>database/database.c</itemPath>
+        <itemPath>database/index.c</itemPath>
+        <itemPath>database/record.c</itemPath>
+        <itemPath>database/table.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="operation" displayName="operation" projectFiles="true">
+        <logicalFolder name="condition" displayName="condition" projectFiles="true">
+          <itemPath>operation/condition/condition.c</itemPath>
+          <itemPath>operation/condition/condition_and.c</itemPath>
+          <itemPath>operation/condition/condition_coleqcol.c</itemPath>
+          <itemPath>operation/condition/condition_coleqcte.c</itemPath>
+          <itemPath>operation/condition/condition_not.c</itemPath>
+          <itemPath>operation/condition/condition_or.c</itemPath>
+          <itemPath>operation/condition/condition_true.c</itemPath>
+        </logicalFolder>
+        <logicalFolder name="projection" displayName="projection" projectFiles="true">
+          <itemPath>operation/operation.c</itemPath>
+          <itemPath>operation/projection/projection.c</itemPath>
+          <itemPath>operation/projection/projection_col.c</itemPath>
+          <itemPath>operation/projection/projection_sum.c</itemPath>
+        </logicalFolder>
+        <itemPath>operation/operation_count.c</itemPath>
+        <itemPath>operation/operation_index.c</itemPath>
+        <itemPath>operation/operation_limit.c</itemPath>
+        <itemPath>operation/operation_offset.c</itemPath>
+        <itemPath>operation/operation_product.c</itemPath>
+        <itemPath>operation/operation_project.c</itemPath>
+        <itemPath>operation/operation_select.c</itemPath>
+        <itemPath>operation/operation_sequential.c</itemPath>
+        <itemPath>operation/operation_union.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="parser" displayName="parser" projectFiles="true">
+        <logicalFolder name="stack" displayName="stack" projectFiles="true">
+          <itemPath>parser/stack/stack.c</itemPath>
+        </logicalFolder>
+        <itemPath>parser/parser.c</itemPath>
+      </logicalFolder>
+      <logicalFolder name="record" displayName="record" projectFiles="true">
+      </logicalFolder>
+      <logicalFolder name="type" displayName="type" projectFiles="true">
+        <itemPath>type/type.c</itemPath>
+      </logicalFolder>
+      <itemPath>esecuele.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <commandLine>-Wall -pedantic -ansi</commandLine>
+        </cTool>
+        <linkerTool>
+          <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/esecuele</output>
+        </linkerTool>
+      </compileType>
+      <packaging>
+        <packType>Tar</packType>
+        <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/esecuele.tar</output>
+        <packFileList>
+          <packFileListElem type="File"
+                            to="${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}"
+                            from="${OUTPUT_PATH}"
+                            perm="755"
+                            owner="root"
+                            group="bin"/>
+        </packFileList>
+      </packaging>
+      <item path="database/database.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="database/database.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="database/index.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="database/index.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="database/record.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="database/record.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="database/table.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="database/table.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="esecuele.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="operation/condition/condition.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="operation/condition/condition.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="operation/condition/condition_and.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="operation/condition/condition_coleqcol.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="operation/condition/condition_coleqcte.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="operation/condition/condition_not.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="operation/condition/condition_or.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="operation/condition/condition_true.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="operation/operation.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="operation/operation.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="operation/operation_count.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="operation/operation_index.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="operation/operation_limit.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="operation/operation_offset.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="operation/operation_product.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="operation/operation_project.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="operation/operation_select.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="operation/operation_sequential.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="operation/operation_union.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="operation/projection/projection.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="operation/projection/projection.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="operation/projection/projection_col.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="operation/projection/projection_sum.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="parser/parser.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="parser/parser.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="parser/stack/stack.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="parser/stack/stack.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="type/type.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="type/type.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+          <commandLine>-Wall -pedantic -ansi</commandLine>
+          <warningLevel>3</warningLevel>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <warningLevel>3</warningLevel>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <linkerTool>
+          <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/esecuele</output>
+        </linkerTool>
+      </compileType>
+      <packaging>
+        <packType>Tar</packType>
+        <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/esecuele.tar</output>
+        <packFileList>
+          <packFileListElem type="File"
+                            to="${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}"
+                            from="${OUTPUT_PATH}"
+                            perm="755"
+                            owner="root"
+                            group="bin"/>
+        </packFileList>
+      </packaging>
+      <item path="database/database.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="database/database.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="database/index.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="database/index.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="database/record.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="database/record.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="database/table.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="database/table.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="esecuele.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="operation/condition/condition.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="operation/condition/condition.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="operation/condition/condition_and.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="operation/condition/condition_coleqcol.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="operation/condition/condition_coleqcte.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="operation/condition/condition_not.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="operation/condition/condition_or.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="operation/condition/condition_true.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="operation/operation.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="operation/operation.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="operation/operation_count.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="operation/operation_index.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="operation/operation_limit.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="operation/operation_offset.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="operation/operation_product.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="operation/operation_project.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="operation/operation_select.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="operation/operation_sequential.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="operation/operation_union.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="operation/projection/projection.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="operation/projection/projection.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="operation/projection/projection_col.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="operation/projection/projection_sum.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="parser/parser.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="parser/parser.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="parser/stack/stack.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="parser/stack/stack.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="type/type.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="type/type.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
